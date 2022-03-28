@@ -1,0 +1,17 @@
+{
+  "name": "GMeet Chat Tools",
+  "author": "Wictor Nogueira",
+  "version": "0.2",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*", "http://meet.google.com/*"],
+      "js": ["vendor/dom-to-image.min.js", "js/injected.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_title": "GMeet Tools"
+  },
+  "permissions": ["storage", "tabs"]
+}
